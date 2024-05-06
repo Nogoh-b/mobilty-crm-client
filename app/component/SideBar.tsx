@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import HeaderSideBar from './ui/HeaderSideBar';
 import { sidebarItems } from '../constants/SideBarConstants';
+import SIdeBarItem from './ui/SIdeBarItem';
+import CustomInput from './ui/CostumInput';
+
 
 interface SideBarProps {
 	menuTitle?: string;
@@ -14,14 +17,8 @@ function SideBar({menuTitle = 'CRM Mobility' }: SideBarProps) {
 		<ul className="nav navbar-nav">	
 			<li className="nav-label">{menuTitle}</li>
       {
-        sidebarItems.map( () =>(
-          <a className="nav-link" href="welcome.html">
-            <span className="dz-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-              <path d="M13.35 20.13c-.76.69-1.93.69-2.69-.01l-.11-.1C5.3 15.27 1.87 12.16 2 8.28c.06-1.7.93-3.33 2.34-4.29 2.64-1.8 5.9-.96 7.66 1.1 1.76-2.06 5.02-2.91 7.66-1.1 1.41.96 2.28 2.59 2.34 4.29.14 3.88-3.3 6.99-8.55 11.76l-.1.09z"/></svg>
-            </span>
-            <span>Welcome</span>
-          </a>
+        sidebarItems.map( (item) =>(
+			<SIdeBarItem iconName={item.icon} hasRadio={item.hasRadio} label={item.title} notificationNumber={item.notificationNumber}  />
         ))
       }
 
@@ -91,19 +88,7 @@ function SideBar({menuTitle = 'CRM Mobility' }: SideBarProps) {
                     <span>Color Theme</span>					
                 </a>
             </li>
-            <li>
-                <div className="mode">
-                    <span className="dz-icon">
-                        <svg className="dark" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g></g><g><g><g><path d="M11.57,2.3c2.38-0.59,4.68-0.27,6.63,0.64c0.35,0.16,0.41,0.64,0.1,0.86C15.7,5.6,14,8.6,14,12s1.7,6.4,4.3,8.2 c0.32,0.22,0.26,0.7-0.09,0.86C16.93,21.66,15.5,22,14,22c-6.05,0-10.85-5.38-9.87-11.6C4.74,6.48,7.72,3.24,11.57,2.3z"/></g></g></g>
-						</svg>
-                    </span>					
-                    <span className="text-dark">Dark Mode</span>
-                    <div className="custom-switch">
-                        <input type="checkbox" className="switch-input theme-btn" id="toggle-dark-menu"/>
-                        <label className="custom-switch-label" htmlFor="toggle-dark-menu"></label>
-                    </div>
-                </div>
-            </li>
+
 		</ul>
 		<div className="sidebar-bottom">
 			<h6 className="name">Soziety - Social Network</h6>

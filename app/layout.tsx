@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import AddToHomeScreenButton from "./component/AddToHomeScreen";
+import SideBar from "./component/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +37,7 @@ export default function RootLayout({
 
             <title>Soziety - Social Network Mobile App Template ( Bootstrap 5 + PWA )</title>
 
-            <link rel="manifest" href="manifest.json"/>
+            <link rel="manifest" href="/manifest.json"/>
 
             <link rel="stylesheet" href="assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css"/>
             <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"/>
@@ -49,9 +50,11 @@ export default function RootLayout({
         </head>   
       <body className={inter.className}>
         <Header />
+		    <SideBar />
         
         {children}
         <Footer />
+
         <AddToHomeScreenButton/>
       </body>
     </html>

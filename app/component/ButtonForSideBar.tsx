@@ -44,7 +44,6 @@ interface ButtonForSideBarProps {
 	return (
 	  <>
 		<div className='menu-toggler' onClick={handleClick}>{component}</div>
-		<SideBar />
 	  </>
 	);
   }

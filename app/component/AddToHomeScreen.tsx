@@ -59,7 +59,7 @@ const AddToHomeScreenButton = () => {
   return (
     <div>
       {showButton && (
-        <button onClick={handleAddToHomeScreen}>Add to Home Screen</button>
+        <button className='pb-5' onClick={handleAddToHomeScreen}>Add to Home Screen</button>
       )}
     </div>
   );
