@@ -11,7 +11,7 @@ function HeaderSideBar({ username = "Inconnu", userIcon = 'assets/images/stories
     <>
       <div className="author-box">
         <div className="dz-media">
-          <img src={userIcon} alt="author-image"/>
+          <img src={userIcon} alt="author-image"/> 
         </div>
         <div className="dz-info">
           <span>{greatingMessage}</span>
