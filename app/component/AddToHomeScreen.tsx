@@ -1,60 +1,7 @@
-/*import React, { useState, useEffect } from 'react';
-
-function AddToHomeScreen() {
-  const [supportsPWA, setSupportsPWA] = useState(false);
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-
-  useEffect(() => {
-    const isPWA = () => {
-        console.log(( window.navigator))
-      return ('serviceWorker' in navigator) && ('Standalone' in window.navigator) && !window.navigator.Standalone;
-    }
-
-    setSupportsPWA(isPWA());
-
-    const beforeInstallPromptHandler = (e: any) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-
-    window.addEventListener('beforeinstallprompt', beforeInstallPromptHandler);
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', beforeInstallPromptHandler);
-    };
-  }, []);
-
-  const installPWA = () => {
-    if (!deferredPrompt) {
-      return;
-    }
-
-    deferredPrompt.prompt();
-
-    deferredPrompt.userChoice.then((result: any) => {
-      if (result.outcome === 'accepted') {
-        console.log('PWA installation accepted');
-      } else {
-        console.log('PWA installation dismissed');
-      }
-    });
-
-    setDeferredPrompt(null);
-  }
-
-  return (
-    <div>
-      {!supportsPWA && (
-        <button onClick={installPWA}>Installer l'application</button>
-      )}
-    </div>
-  );
-}
-
-export default AddToHomeScreen;*/
 
 
 
+"use client"
 import React, { useState, useEffect } from 'react';
 
 const AddToHomeScreenButton = () => {

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import SideBar from './SideBar';
 interface ButtonForSideBarProps {
