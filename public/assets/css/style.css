@@ -18389,7 +18389,7 @@ textarea {
 }
 
 .show-pass .fa-eye {
-    display: none;
+    /* display: none; */
 }
 
 .show-pass.active .fa-eye-slash {
@@ -26495,4 +26495,11 @@ ul.list-check li:after {
     backdrop-filter: blur(10px);
     transition: all 0.5s;
     width: 100%;
+}
+
+/* Style pour retirer les bordures lorsqu'un input est en focus */
+input:focus ,textarea:focus, button:focus  {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none!important;
 }

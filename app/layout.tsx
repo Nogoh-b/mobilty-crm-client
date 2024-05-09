@@ -55,7 +55,7 @@ export default function RootLayout({
         {children}
         <Footer />
 
-        <AddToHomeScreenButton/>
+        {/* <AddToHomeScreenButton/> */}
       </body>
     </html>
   );
