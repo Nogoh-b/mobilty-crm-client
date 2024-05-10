@@ -1,14 +1,14 @@
 'use client'
 import React, { useState, useEffect, CSSProperties } from 'react';
 import FontAwesome from './FontAwesome';
-import { InputSyle } from '@/app/constants/AppConstants';
+import { InputStyle } from '@/app/constants/AppConstants';
 interface TextareaProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';
 	hasRightIcon?: boolean;
 	iconName?: FontAwesomeIcon;
 	placeHolder?: string;
 	link?: string;
-	textareaStyle?: InputSyle;
+	textareaStyle?: InputStyle;
 	iconSize?: number;
 	order?: number;
 	onClick?: (i: number) => void; 

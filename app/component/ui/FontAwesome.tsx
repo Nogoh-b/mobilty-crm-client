@@ -1,3 +1,4 @@
+import { Colors, colorsVariants } from '@/app/constants/AppConstants';
 import React, { useState, useEffect, CSSProperties } from 'react';
 interface FontAwesomeProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';
@@ -5,7 +6,7 @@ interface FontAwesomeProps {
 	iconName?: FontAwesomeIcon;
 	notificationNumber?: number;
 	label?: string;
-	link?: string;
+	iconColor?: Colors;
 	iconStyle?: 'Style1' | 'Style2';
 	iconSize?: number;
 	order?: number;
@@ -13,7 +14,7 @@ interface FontAwesomeProps {
 	onClick?: (i: number) => void; 
 	style?: CSSProperties | undefined;
   }
-function FontAwesome({isActive = false,iconType = 'fa', iconSize =20 , className = '',  order = 0 ,  iconName = 'search', iconStyle ="Style1" , link ="Style1" , onClick}:FontAwesomeProps) {
+function FontAwesome({isActive = false,iconType = 'fa', iconSize =20 , className = '',  order = 0 ,  iconName = 'search', iconStyle ="Style1" , iconColor ="light" , onClick}:FontAwesomeProps) {
 	const handleClick = () => {
 		if (onClick) {
 		  onClick(order); // Appeler la fonction de rappel si elle est fournie
@@ -22,7 +23,7 @@ function FontAwesome({isActive = false,iconType = 'fa', iconSize =20 , className
 
 	return (
 		<>
-				<i className={`${iconType} fa-${iconName} ${isActive ? 'text-primary1' :  'text-black-50'} ${className}`} style={{fontSize: iconSize + 'px'}}>
+				<i className={`${iconType} fa-${iconName} ${isActive ? 'text-primary1' :  iconColor} ${className}`} style={{ color: colorsVariants[iconColor] +'!important' , fontSize: iconSize + 'px'}}>
 				</i>  
 		</>
 	);

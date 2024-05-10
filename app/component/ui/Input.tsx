@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect, CSSProperties } from 'react';
 import FontAwesome from './FontAwesome';
-import { IconSize, InputSize, InputSyle, InputType } from '@/app/constants/AppConstants';
+import { IconSize, InputSize, InputStyle, InputType } from '@/app/constants/AppConstants';
 
 interface InputProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';
@@ -10,7 +10,7 @@ interface InputProps {
 	placeHolder?: string;
 	type?: InputType;
 	link?: string;
-	inputStyle?: InputSyle;
+	inputStyle?: InputStyle;
 	inputSize?: InputSize;
 	iconSize?: IconSize;
 	order?: number;
