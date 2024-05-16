@@ -7,11 +7,14 @@ import Avatar from "../component/ui/Avatar";
 import AvatarList from "../component/ui/AvatarList";
 import Badge from "../component/ui/Badge";
 import ButtonGroup from "../component/ui/ButtonGroup";
+import Divider from "../component/Divider";
+import RangeSlider from "../component/RangeSlider";
 
 export default function Home() {
   return (
     <main className="p-5 mt-5" >
 
+      <div className="pb1-5 mb-5">
       <Input iconName="at" iconType="fa" placeHolder="Nom" hasRightIcon inputStyle="GroupIcon" inputSize="lg" />
       <Input iconName="search" iconType="fa" placeHolder="Nom" hasRightIcon inputStyle="GroupIcon" inputSize="sm" />
       <Input iconName="at" iconType="fa" placeHolder="Nom" type="date" inputStyle="Minimalist"  />
@@ -60,6 +63,20 @@ export default function Home() {
 
       <Textarea   placeHolder="Mon contenu" textareaStyle="ModernFielsRadius" />
       <UploadInput />
+
+
+      <Divider color="danger" iconName="address-book" iconPosition="" text="Divider" />
+      <Divider color="secondary" iconName="address-book" iconPosition="right" text=""  />
+      <Divider color="primary" iconName="search" iconPosition="left" text=""  />
+      <Divider color="info" iconName="search" iconPosition="left" hasLabel = {false} text="" type="dotted" />
+      <Divider color="warning"  iconName="search" iconPosition="left" hasLabel = {false} text=""  type="dashed"  />
+
+
+      <RangeSlider />
+      
+      </div>
+
+
     </main>
   );
 }
