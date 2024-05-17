@@ -1,4 +1,4 @@
-import ButtonForSideBar from "./ButtonForSideBar";
+import ButtonForSideBar from "./ui/ButtonForSideBar";
 import ToolButton from "./ToolButton";
 
 interface HeaderProps {

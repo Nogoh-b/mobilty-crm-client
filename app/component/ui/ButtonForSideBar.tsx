@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import SideBar from './SideBar';
+import SideBar from '../SideBar';
 interface ButtonForSideBarProps {
 	component: React.ReactNode;
 	onClick?: () => void; // Ajoutez cette prop pour gérer le clic sur le composant

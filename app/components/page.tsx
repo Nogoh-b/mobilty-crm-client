@@ -7,8 +7,11 @@ import Avatar from "../component/ui/Avatar";
 import AvatarList from "../component/ui/AvatarList";
 import Badge from "../component/ui/Badge";
 import ButtonGroup from "../component/ui/ButtonGroup";
-import Divider from "../component/Divider";
-import RangeSlider from "../component/RangeSlider";
+import Divider from "../component/ui/Divider";
+import RangeSlider from "../component/ui/RangeSlider";
+import Spinner from "../component/ui/spinner";
+import Button from "../component/ui/Button";
+import Stepper from "../component/ui/Stepper";
 
 export default function Home() {
   return (
@@ -72,8 +75,33 @@ export default function Home() {
       <Divider color="warning"  iconName="search" iconPosition="left" hasLabel = {false} text=""  type="dashed"  />
 
 
-      <RangeSlider />
+      {/* <RangeSlider /> */}
+      <div className="row row-cols-4">
+        <Button color="primary" size="sm" text="Boutton" isLight />
+      </div>
+      <div className="row row-cols-4">
+        <Button color="primary" size="sm" text="Boutton" isLight />
+        <Button color="primary" size="sm" text="Boutton"  />
+        <Button color="info" size="lg" text="Salut" isOutline />
+        <Button color="secondary" size="lg" text="Salut" isOutline isLoading />
+      </div>
+
+
+      <Spinner size="lg" color="danger" />
+      <Spinner size="" color="info" />
+      <Spinner color="primary" size="sm" />
+      <Spinner color="primary" size="sm" />
+      <div>
+        <Spinner color="primary" size="sm" isGrow />
+      </div>
+      <div>
+        <Spinner color="primary" size="lg" isGrow />
+        <Spinner color="primary" size="md" isGrow />
+      </div>
       
+      <div>
+        <Stepper color="primary" size="sm" isGrow />
+      </div>
       </div>
 
 

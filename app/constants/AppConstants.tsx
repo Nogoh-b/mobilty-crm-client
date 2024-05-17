@@ -38,7 +38,7 @@ export type InputType =
 export type Colors = 'black' | 'primary' | 'secondary' | 'success' | 'dark' | 'light' | 'info'  | 'white' | 'danger' | 'warning'
 export type InputStyle = 'GroupIcon' | 'ModernFields' | 'ModernFielsRadius' | 'Minimalist'
 export type InputSize = 'lg' | 'sm' | ''
-export type Size = 'lg' | 'sm' | ''
+export type Size = 'lg' | 'sm' |  ''
 
 export type IconSize = 'lg' | '2x' | '3x' | '4x' | '5x' | '6x' | '7x' | '8x' | '9x' | '10x';
 // export type IconColor = 'black' | 'primary' | 'secondary' | 'succes' | 'dark' | 'light' | 'info' | 'danger' | 'warning';

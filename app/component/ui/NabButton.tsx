@@ -1,5 +1,5 @@
 import React, { useState, useEffect, CSSProperties } from 'react';
-import SideBar from './SideBar';
+import SideBar from '../SideBar';
 import IconButton from './IconButton';
 interface NabButtonProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';

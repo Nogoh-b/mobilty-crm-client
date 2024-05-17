@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import IconButton from './IconButton';
-import { footerMenuDatas } from '../constants/FooterConstants';
+import { footerMenuDatas } from '../../constants/FooterConstants';
 import NabButton from './NabButton';
 
 function ProgressBar() {

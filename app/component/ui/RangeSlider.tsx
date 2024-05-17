@@ -1,7 +1,7 @@
 "use client"
 import React, {CSSProperties } from 'react';
 import {useRouter} from 'next/navigation';
-import { Colors } from '../constants/AppConstants';
+import { Colors } from '../../constants/AppConstants';
 
 interface RangeSliderProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';

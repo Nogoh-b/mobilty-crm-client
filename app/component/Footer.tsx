@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import IconButton from './IconButton';
+import IconButton from './ui/IconButton';
 import { footerMenuDatas } from '../constants/FooterConstants';
-import NabButton from './NabButton';
+import NabButton from './ui/NabButton';
 
 function Footer() {
 	const [activeIndex, setActiveIndex] = useState(0);
