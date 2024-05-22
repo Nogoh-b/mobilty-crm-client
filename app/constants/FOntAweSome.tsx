@@ -1,4 +1,4 @@
-type FontAwesomeIcon = 
+type FontAwesomeIcon = 'facebook' | 'facebook-fa' | 'linkedin' | 'twitter' | 'whatsapp' | 'google' | 'phone' | 'pinterest' | 'email'  |
   "address-book" | "address-card" | "adjust" | "air-freshener" | "align-center" | "align-justify" | "align-left" | "align-right" | 
   "allergies" | "ambulance" | "american-sign-language-interpreting" | "anchor" | "angle-double-down" | "angle-double-left" | "angle-double-right" | "angle-double-up" | 
   "angle-down" | "angle-left" | "angle-right" | "angle-up" | "angry" | "ankh" | "apple-alt" | "archive" | 

@@ -12,6 +12,9 @@ import RangeSlider from "../component/ui/RangeSlider";
 import Spinner from "../component/ui/spinner";
 import Button from "../component/ui/Button";
 import Stepper from "../component/ui/Stepper";
+import Social from "../component/ui/Social";
+import Treeview from "../component/ui/Treeview";
+import Timeline from "../component/Timeline";
 
 export default function Home() {
   return (
@@ -101,6 +104,19 @@ export default function Home() {
       
       <div>
         <Stepper color="primary" size="sm" isGrow />
+      </div>
+      
+      <div>
+        <Social  className="" text="" iconName="facebook" size="sm" isButtonIcon />
+        <Social  className="" text="" iconName="facebook" size="lg" isButtonIcon isRounded />
+        <Social  className="" text="" iconName="facebook" size="" isButtonIcon isRounded />
+        <Social  className=" w-100" buttonType="email" iconName="ambulance" iconType="fa" text="email" />
+        <Social  className=" w-100" buttonType="google" iconName="google" text="google" />
+        <Social  className=" w-100" buttonType="twitter" iconName="twitter" text="twitter" />
+        <Social  className=" w-100" buttonType="pinterest" iconName="pinterest" text="pinterest" />
+
+        <Treeview />
+        <Timeline />
       </div>
       </div>
 
