@@ -35,7 +35,7 @@ export type InputType =
   | "url"
   | "week";
 
-export type Colors = 'black' | 'primary' | 'secondary' | 'success' | 'dark' | 'light' | 'info'  | 'white' | 'danger' | 'warning'
+export type Colors = 'black' | 'primary' | 'secondary' | 'success' | 'dark' | 'light' | 'info'  | 'white' | 'danger' | 'warning' | ''
 export type InputStyle = 'GroupIcon' | 'ModernFields' | 'ModernFielsRadius' | 'Minimalist'
 export type InputSize = 'lg' | 'sm' | ''
 export type Size = 'lg' | 'sm' |  ''

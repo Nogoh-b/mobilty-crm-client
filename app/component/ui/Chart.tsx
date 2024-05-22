@@ -13,16 +13,12 @@ function Chart() {
     <>
 
 		<div className="col-12">
-			<div className="card text-white bg-info">
+			<div className="card">
 				<div className="card-header">
-					<h5 className="card-title text-white">Info card title</h5>
+					<h5 className="card-title">Pie Chart</h5>
 				</div>
-				<div className="card-body mb-0">
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="javascript:void(0);" className="btn bg-white text-info btn-card">Go
-						somewhere</a>
-				</div>
-				<div className="card-footer bg-transparent border-0 text-white">
-					Last updateed 3 min ago
+				<div className="card-body">
+					<canvas id="dzPieChart" width="400" height="300"></canvas>
 				</div>
 			</div>
 		</div>
