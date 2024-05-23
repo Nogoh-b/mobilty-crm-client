@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Input from "../component/ui/Input";
 import Textarea from "../component/ui/Textarea";
@@ -17,8 +18,65 @@ import Treeview from "../component/ui/Treeview";
 import Timeline from "../component/Timeline";
 import Card from "../component/ui/Card";
 import Chart from "../component/ui/Chart";
+import PieChart from "../component/ui/PieChart";
+import DoughnutChart from "../component/ui/DoughnutChart";
+import PolarAreaChart from "../component/ui/PolarAreaChart";
+import { DoughnutChartData, PieChartData, PolarAreaChartData } from "../constants/AppConstants";
+import Dropdown from "../component/ui/Dropdown";
 
 export default function Home() {
+
+    
+  const pieData: PieChartData = {
+    labels: ['Red', 'Blue', 'Yellow', 'Grey'],
+    datasets: [
+      {
+        label: 'My First Dataset',
+        data: [20, 50, 50, 90],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(255, 205, 86)',
+          'rgb(54, 162, 235)',
+          'rgb(117, 187, 190)',
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  };
+
+  const doughnutData: DoughnutChartData = {
+    labels: ['Red', 'Blue', 'Yellow', 'Grey'],
+    datasets: [
+      {
+        label: 'My First Dataset',
+        data: [30, 40, 50, 80],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(255, 205, 86)',
+          'rgb(54, 162, 235)',
+          'rgb(117, 187, 190)',
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  };
+
+  const polarAreaData: PolarAreaChartData = {
+    labels: ['Red', 'Blue', 'Yellow', 'Grey'],
+    datasets: [
+      {
+        label: 'My First Dataset',
+        data: [11, 16, 7, 3],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(117, 187, 190)',
+        ],
+      },
+    ],
+  };
+
   return (
     <main className="p-5 mt-5" >
 
@@ -126,13 +184,25 @@ export default function Home() {
           <Card color="secondary" title="ttile" content="Mon contenu" footerText="Footer text" cardLinkText="Link Text" btnLink="" btnLinkText="Mon boutton" isFull />
           <Card color="danger" btnColor="secondary" title="ttile" content="Mon contenu" footerText="Footer text" cardLinkText="Link Text" btnLink="" btnLinkText="Mon boutton" isFull />
           <Card color="success" title="ttile" content="Mon contenu" footerText="Footer text" isContentCenter />
-          <Chart />
-          <Chart />
-          <Chart />
-          <Chart />
-          <Chart />
-          <Chart />
+          <div>
+            <h1>Chart Examples</h1>
+            <div  className="w-25">
+              <h2>Pie Chart</h2>
+              <PieChart data={pieData} />
+            </div>
+            <div className="w-25">
+              <h2>Doughnut Chart</h2>
+              <DoughnutChart data={doughnutData} />
+            </div>
+            <div  className="w-25">
+              <h2>Polar Area Chart</h2>
+              <PolarAreaChart data={polarAreaData} />
+            </div>
+          </div>
+
         </div>
+
+        <Dropdown />
       </div>
 
 

@@ -29,12 +29,15 @@ interface ButtonGroupProps {
 			}
 
 			{
-				<div className="btn-group">
-					<button id="btnGroupDrop1" type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
-					<div className="dropdown-menu"><a className="dropdown-item" href="javascript:void()">Dropdown link</a>
-						<a className="dropdown-item" href="javascript:void()">Dropdown link</a>
+				<>
+					<div className="btn-group">
+						<button id="btnGroupDrop1" type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+						<div className="dropdown-menu"><a className="dropdown-item" href="javascript:void()">Dropdown link</a>
+							<a className="dropdown-item" href="javascript:void()">Dropdown link</a>
+						</div>
 					</div>
-				</div>
+				</>
+				
 			}
 
 		</div>

@@ -47,3 +47,33 @@ export const colorsVariants ={black: '', primary: '#fe9063', secondary:'#704FFE'
 export type AlertType = 'solid' | 'light'
 // export type AlertStyle = 'black' | 'primary' | 'secondary' | 'succes' | 'dark' | 'light' | 'info' | 'danger' | 'warning';
 
+export type PieChartData = {
+  labels: string[];
+  datasets: {
+    label: string;
+    data: number[];
+    backgroundColor: string[];
+    hoverOffset: number;
+  }[];
+};
+
+
+
+export type DoughnutChartData = {
+  labels: string[];
+  datasets: {
+    label: string;
+    data: number[];
+    backgroundColor: string[];
+    hoverOffset: number;
+  }[];
+};
+
+export type PolarAreaChartData = {
+  labels: string[];
+  datasets: {
+    label: string;
+    data: number[];
+    backgroundColor: string[];
+  }[];
+};
