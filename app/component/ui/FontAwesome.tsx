@@ -14,7 +14,7 @@ interface FontAwesomeProps {
 	onClick?: (i: number) => void; 
 	style?: CSSProperties | undefined;
   }
-function FontAwesome({isActive = false,iconType = 'fa', iconSize =20 , className = '',  order = 0 ,  iconName = 'search', iconStyle ="Style1" , iconColor ="light" , onClick}:FontAwesomeProps) {
+function FontAwesome({isActive = false,iconType = 'fa', iconSize =20 , className = '',  order = 0 ,  iconName = 'search', iconStyle ="Style1" , iconColor ="" , onClick}:FontAwesomeProps) {
 	const handleClick = () => {
 		if (onClick) {
 		  onClick(order); // Appeler la fonction de rappel si elle est fournie

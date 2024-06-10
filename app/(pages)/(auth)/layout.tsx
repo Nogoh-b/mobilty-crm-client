@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
-import AddToHomeScreenButton from "./component/AddToHomeScreen";
-import SideBar from "./component/SideBar";
+import Footer from "@/app/component/Footer";
+import SideBar from "@/app/component/SideBar";
+import Header from "@/app/component/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,9 +47,12 @@ export default function RootLayout({
 
         </head>   
       <body className={inter.className}>
+        <Header />
+		    <SideBar />
         <div className="content-body">
           {children}
         </div>
+        <Footer />
 
         {/* <AddToHomeScreenButton/> */}
 
