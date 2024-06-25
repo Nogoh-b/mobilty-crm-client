@@ -2,7 +2,7 @@
 import Input from "../../../component/ui/Input";
 import Button from "../../../component/ui/Button";
 
-export default function Home() {
+export default function Login() {
 
     
 
