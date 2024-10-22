@@ -76,7 +76,7 @@ export default function Onboarding() {
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <div className="started">
-                      <h1>People's First Preference Is Soziety</h1>
+                      <h1>People&apos;s First Preference Is Soziety</h1>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                   </SwiperSlide>
