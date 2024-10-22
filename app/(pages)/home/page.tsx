@@ -19,7 +19,7 @@ export default function Home() {
 
   const handleInstallClick = () => {
           console.log('User accepted the install prompt111');
-    if (deferredPrompt) {
+    /*if (deferredPrompt) {
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then((choiceResult: any) => {
         if (choiceResult.outcome === 'accepted') {
@@ -29,7 +29,7 @@ export default function Home() {
         }
         setDeferredPrompt(null);
       });
-    }
+    }*/
   };
 
   return (
