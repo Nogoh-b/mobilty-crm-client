@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect } from 'react';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
-import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper-bundle.min.css';
 
 export default function Onboarding() {
-  useEffect(() => {
-    import('swiper/swiper-bundle.min.css');
-  }, []);
+  // useEffect(() => {
+  //   import('swiper/swiper-bundle.min.css');
+  // }, []);
 
   return (
     <>

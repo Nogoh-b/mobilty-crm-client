@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
 import AddToHomeScreenButton from "./component/AddToHomeScreen";
-import SideBar from "./component/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,7 +50,7 @@ export default function RootLayout({
           {children}
         </div>
 
-        {/* <AddToHomeScreenButton/> */}
+        <AddToHomeScreenButton/>
 
         <script src="assets/js/jquery.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

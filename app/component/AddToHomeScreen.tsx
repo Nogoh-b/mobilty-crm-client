@@ -2,12 +2,23 @@
 
 
 "use client"
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const AddToHomeScreenButton = () => {
   const [showButton, setShowButton] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered:', registration);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  }, []);
   useEffect(() => {
     const isPWA = () => {
         console.log(( window.navigator))
