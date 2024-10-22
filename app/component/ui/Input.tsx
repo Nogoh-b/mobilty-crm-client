@@ -1,7 +1,7 @@
 'use client'
-import React, { useState, useEffect, CSSProperties } from 'react';
+import { useState, useEffect, CSSProperties } from 'react';
 import FontAwesome from './FontAwesome';
-import { Colors, IconSize, InputSize, InputStyle, InputType } from '@/app/constants/AppConstants';
+import { Colors, InputSize, InputStyle, InputType } from '@/app/constants/AppConstants';
 
 interface InputProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid';
@@ -18,7 +18,7 @@ interface InputProps {
 	onClick?: (i: number) => void; 
 	style?: CSSProperties | undefined;
   }
-function Input({hasRightIcon = false,iconType = 'fa', inputSize ='lg' , type ='text' ,  placeHolder = '' ,  order = 0 ,  iconName = 'search', inputStyle ="GroupIcon" , iconSize ="15", iconColor='white' , onClick}:InputProps) {
+function Input({hasRightIcon = false,iconType = 'fa', inputSize ='lg' , type ='text' ,  placeHolder = '' ,  order = 0 ,  iconName = 'search', inputStyle ="GroupIcon" , iconSize =15, iconColor='white' , onClick}:InputProps) {
     const [showPassword, setShowPassword] = useState<boolean>(false);
     const [classInput, setClassInput] = useState<string>('input-group-icon');
     const [inputSizeState, setInputSizeState] = useState<string>('input-group-icon');
