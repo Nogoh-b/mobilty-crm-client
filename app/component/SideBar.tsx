@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import HeaderSideBar from './ui/HeaderSideBar';
 import { sidebarItems } from '../constants/SideBarConstants';
 import SIdeBarItem from './ui/SIdeBarItem';
-import CustomInput from './ui/CostumInput';
 
 
 interface SideBarProps {
@@ -17,8 +15,8 @@ function SideBar({menuTitle = 'CRM Mobility' }: SideBarProps) {
 		<ul className="nav navbar-nav">	
 			<li className="nav-label">{menuTitle}</li>
       {
-        sidebarItems.map( (item) =>(
-			<SIdeBarItem iconName={item.icon} hasRadio={item.hasRadio} label={item.title} notificationNumber={item.notificationNumber}  />
+        sidebarItems.map( (item, index) =>(
+			<SIdeBarItem key={index} iconName={item.icon} hasRadio={item.hasRadio} label={item.title} notificationNumber={item.notificationNumber}  />
         ))
       }
 
