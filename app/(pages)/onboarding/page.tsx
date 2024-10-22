@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/swiper-bundle.min.css';
@@ -28,7 +27,7 @@ export default function Onboarding() {
                 <p>
                   Trouvez, postulez, et gérez vos dossiers en toute simplicité,
                   garantissant ainsi un avenir académique prometteur. Nous sommes
-                  partenaires de plusieurs groupes d’écoles à l’étranger.
+                  partenaires de plusieurs groupes d&apos;écoles à l&apos;étranger.
                 </p>
               </div>
             </SwiperSlide>
@@ -38,7 +37,7 @@ export default function Onboarding() {
                 <p>
                   Recherche de logement, préparation aux entretiens, formalités VISA ou
                   assurances, nous simplifions chaque étape pour vous permettre de vous
-                  concentrer sur l'essentiel : votre réussite.
+                  concentrer sur l&apos;essentiel : votre réussite.
                 </p>
               </div>
             </SwiperSlide>

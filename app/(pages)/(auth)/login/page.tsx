@@ -38,7 +38,7 @@ export default function Login() {
                   </div>
                 </div>	
                 <div className="d-flex align-items-center justify-content-center">
-                  <a href="javascript:void(0);" className="text-light text-center d-block">Vous n'avez pas de compte ?</a>
+                  <a href="javascript:void(0);" className="text-light text-center d-block">Vous n&apos;avez pas de compte ?</a>
                   <a href="register.html" className="btn-link d-block ms-3 text-underline">Inscrivez vous</a>
                 </div>
               </div>

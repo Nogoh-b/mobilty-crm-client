@@ -1,7 +1,4 @@
 'use client'
-import React, { useState, useEffect, CSSProperties } from 'react';
-import FontAwesome from './FontAwesome';
-import { IconSize, InputSize, InputStyle, InputType } from '@/app/constants/AppConstants';
 
 interface AvatarListProps {
 	datas?: string[];
@@ -16,7 +13,7 @@ function AvatarList({datas = ['/assets/images/avatar/pic1.jpg'], size = 35 , onC
 			<ul className="dz-avatar list-stacked">
 				{
 					datas.map((src, index) => (
-						<li className="avatar-list">
+						<li key={index} className="avatar-list">
 							<div className={`media media-${size}`}>
 								<img src={src} />	
 							</div>

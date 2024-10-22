@@ -1,6 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import IconButton from './ui/IconButton';
+import { useState } from 'react';
 import { footerMenuDatas } from '../constants/FooterConstants';
 import NabButton from './ui/NabButton';
 
@@ -16,7 +15,7 @@ function Toast() {
 		<div className="toolbar-inner menubar-nav">
 		{
 		footerMenuDatas.map((item, index) => (
-			<NabButton onClick={handleClick} notificationNumber = {item.notificationNumber} label = {item.title} iconName={item.icon} link={item.link} isActive = {index === activeIndex} order={index}  />
+			<NabButton key={index} onClick={handleClick} notificationNumber = {item.notificationNumber} label = {item.title} iconName={item.icon} link={item.link} isActive = {index === activeIndex} order={index}  />
 			))
 		}
 		</div>

@@ -36,7 +36,7 @@ export default function Home() {
     <div>
       <h1>Bienvenue sur mon application</h1>
       {deferredPrompt && (
-        <button onClick={handleInstallClick}>Ajouter à l'écran d'accueil</button>
+        <button onClick={handleInstallClick}>Ajouter à l&apos;écran d&apos;accueil</button>
       )}
     </div>
   );
