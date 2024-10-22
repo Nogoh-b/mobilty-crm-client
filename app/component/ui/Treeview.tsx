@@ -1,7 +1,3 @@
-import React, { useState, useEffect, CSSProperties } from 'react';
-import SideBar from '../SideBar';
-import IconButton from './IconButton';
-import { text } from 'stream/consumers';
 import { Size } from '@/app/constants/AppConstants';
 interface TreeviewProps {
 	iconType?: 'fa' | 'far' | 'fas' | 'solid' | 'fab';
@@ -36,7 +32,7 @@ function Treeview({isButtonIcon = false,iconType = 'fab', isRounded = false, siz
                                     <li data-jstree='{ "selected" : true }'>Child node 1</li>
                                     <li>Child node 2</li>
                                     <li className="jstree-node  jstree-leaf"><i className="jstree-icon jstree-ocl" role="presentation"></i>
-									<a className="jstree-anchor" href="#"  role="treeitem" aria-selected="false" aria-level="2" id="j4_3_anchor">
+									<a className="jstree-anchor" href="#"  role="treeitem" aria-selected="false" id="j4_3_anchor">
 										<i className="jstree-icon jstree-themeicon flaticon2-hourglass-1 text-danger jstree-themeicon-custom" role="presentation"></i>Custom Icon
 									</a></li>
                                     <li data-jstree='{ "opened" : true }'>Root node
