@@ -34,7 +34,7 @@ export default function RootLayout({
 
             <title>Soziety - Social Network Mobile App Template ( Bootstrap 5 + PWA )</title>
 
-            <link rel="manifest" href="assets/manifest.json"/>
+            <link rel="manifest" href="manifest.json"/>
 
             <link rel="stylesheet" href="assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css"/>
             <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"/>
