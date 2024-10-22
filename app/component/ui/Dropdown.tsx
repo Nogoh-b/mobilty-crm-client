@@ -1,8 +1,8 @@
 "use client"
 import { Colors, Size } from '@/app/constants/AppConstants';
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 interface DropdownProps {
-	color: Colors;
+	color?: Colors;
 	type?: '' | 'square' | 'light' | 'outline';
 	text?: string;
 	className?: string;
