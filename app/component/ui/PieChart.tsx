@@ -1,7 +1,7 @@
 // components/PieChart.js
 'use client'
 import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, ChartOptions } from 'chart.js';
 import { PieChartData } from '@/app/constants/AppConstants';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -25,7 +25,7 @@ const PieChart = ({data}:{data?: PieChartData}) => {
       ],
     };
 
-  const options = {
+  const options: ChartOptions<'pie'>  = {
     plugins: {
       legend: {
         position: 'bottom',
